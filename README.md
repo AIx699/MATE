@@ -4,4 +4,4 @@ This repository implements a compact motion-conditioned architecture for weakly-
 
 Quick links
 - UCF-Crime dataset information: https://www.crcv.ucf.edu/projects/real-world/
-- Extracted X3D features (shared): https://drive.google.com/drive/u/0/folders/1YWZhEtcO85WWLQptBsMWi2H3NqCKrPpY
+- Extracted X3D features (shared): https://drive.google.com/file/d/1TUkZN4zWWeHpFkr24FvWNIuqOIHy96EJ/view?usp=sharing
