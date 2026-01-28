@@ -35,7 +35,7 @@ python test.py
 ```
 ## Result on UCF CRIME 
 
-| Component Removed                          |  Feature            | AUC-ROC |
+| Method                                     |  Feature            | AUC-ROC |
 |-------------------------------------------:|------------------:  |--------:|
 | BN-WVAD                                    | I3D                 | 87.24   |
 | STEAD                                      | X3D                 | 91.34   |
