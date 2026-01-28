@@ -37,5 +37,5 @@ python test.py
 
 ## Thanks to
 
-BN-WVAD 2023  https://github.com/cool-xuan/BN-WVAD
-STEAD 2025 https://github.com/agao8/STEAD
+- BN-WVAD 2023  https://github.com/cool-xuan/BN-WVAD
+- STEAD 2025 https://github.com/agao8/STEAD
