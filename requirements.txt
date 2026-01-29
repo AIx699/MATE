@@ -1,0 +1,8 @@
+numpy
+timm
+torch
+torchinfo
+tqdm
+scikit-learn
+matplotlib
+seaborn
