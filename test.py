@@ -78,5 +78,5 @@ if __name__ == '__main__':
     
     model = model.to(device)
     summary(model, (1, 192, 16, 10, 10))
-    model = model.load_state_dict(torch.load(MODEL_LOCATION + MODEL_NAME + MODEL_EXTENSION),strict=False)
+    model.load_state_dict(torch.load(MODEL_LOCATION + MODEL_NAME + MODEL_EXTENSION),strict=False)
     auc = test(test_loader, model, args, device, name = MODEL_NAME, main = True)
