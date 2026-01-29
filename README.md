@@ -1,4 +1,4 @@
-# MATE: A Motion-Aware Dynamic Attention and Temporal-Conditioned Convolution Encoder for Efficient Anomaly Detection
+# MATE: A Motion-Aware Dynamic Attention for Efficient Anomaly Detection
 
 This repository implements a motion-conditioned architecture for weakly-supervised video anomaly detection . The model conditions attention and pooling on an explicit MotionMap derived from feature differences and operates on precomputed X3D or I3D features extracted from UCF-Crime and XD-Violence videos.
 
