@@ -4,6 +4,11 @@
 
 Efficient and accurate video anomaly detection is critical for real-time applications such as autonomous driving, large-scale surveillance, and security monitoring. However, many existing approaches rely on implicit motion representations, which often struggle to capture complex, subtle, or rapidly evolving anomalies, limiting both detection accuracy and computational efficiency. To address this gap, we propose **MATE** (**M**otion-**A**ware **A**ttention and **T**emporal-**C**onditioned **C**onvolution **E**ncoder), a lightweight motion-conditioned architecture that explicitly integrates motion magnitude and directional information throughout the network. MATE leverages directional motion maps, motion-gated multi-scale temporal-conditioned convolutions, motion-modulated kernelized linear attention, and motion-aware temporal pooling to focus computation on anomaly-relevant regions while remaining highly parameter-efficient. On the UCF-Crime benchmark under the standard video-level evaluation protocol, MATE-FAST and MATE-BASE achieve ROC-AUC scores of **89.75%** and **91.78%**, respectively, and outperform recent strong baselines while using substantially fewer parameters (FAST ≈ 8.5k, BASE ≈ 40k). Extensive ablation studies, synthetic signal-to-noise ratio experiments, and per-fold cross-validation demonstrate that explicit motion conditioning improves temporal feature discriminability and embedding geometry under weak supervision. These results position MATE as a practical and effective solution for low-resource and low-latency video anomaly detection. Code and pretrained models are publicly available at https://github.com/AIx699/MATE.
 
+## Architecture
+
+<img width="1122" height="422" alt="Arch2" src="https://github.com/user-attachments/assets/09928364-bce2-472c-aa59-c18c794af77e" />
+
+
 ## Dataset
 
 - **UCF-Crime** dataset information: https://www.crcv.ucf.edu/projects/real-world/
@@ -26,14 +31,14 @@ python main.py \
   --batch_size 16 \
   --lr 0.002 \
   --max_epoch 250 \
-  --exp_name "motion_cond_fast" \
-  --model_variant fast
+  --model_arch fast \
+  --model_name motion_fast
 ```
 
 ## Inference 
 
 ```bash
-python test.py
+python test.py --model_arch fast
 ```
 ## Result on UCF CRIME 
 
